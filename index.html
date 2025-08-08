@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tea-house-25</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/f53cfe0651.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       .font-manrope {
@@ -19,8 +25,43 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header>
-      <h1 class="text-3xl font-bold text-center my-3">Welcome to tea house</h1>
+    <header class="max-w-6xl mx-auto p-4">
+      <section class="md:flex items-center justify-between py-8">
+        <!-- content -->
+        <div class="space-y-6">
+          <h2 class="text-3xl lg:text-6xl font-semibold">
+            It's good <br />
+            tea time at The Tea House
+          </h2>
+          <p>
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="py-2 px-5 bg-violet-500 text-white font-semibold rounded shadow-md hover:bg-violet-700 focus:outline-none bg-gradient-to-r from-cyan-500 to-blue-500"
+          >
+            Explore more <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </button>
+        </div>
+        <!-- img container -->
+        <div class="relative">
+          <div>
+            <img class="w-full" src="./images/banner.png" alt="" />
+          </div>
+          <!-- card -->
+          <div
+            class="flex bg-gray-400 items-center gap-4 border-2 border-gray-300 rounded shadow-xl p-2 absolute top-28 md:top-80 md:left-32"
+          >
+            <!-- icon -->
+            <div><i class="fa-solid fa-star text-orange-300 text-2xl"></i></div>
+            <!-- text -->
+            <div>
+              <h4 class="text-2xl font-bold">5.00</h4>
+              <p>Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
